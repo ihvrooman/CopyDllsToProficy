@@ -1,0 +1,766 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppStandards</name>
+    </assembly>
+    <members>
+        <member name="T:AppStandards.Converters.BooleanToVisibility">
+            <summary>
+            Attempts to convert to a Boolean value and then returns Visible (true) or Collapsed (false).
+            If the input value is actually a Visibility enum value, the return is Boolean.
+            Accepts Boolean, numeric, string, and Visibility (enum) values.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Converters.BooleanToVisibility.StringComparison">
+            <summary>
+            Default string comparison rules to use when performing text comparisons.
+            </summary>
+        </member>
+        <member name="T:AppStandards.Helpers.ComputerHelper">
+            <summary>
+            Contains computer-related methods and properties.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Helpers.ComputerHelper.GetRemoteComputerOffsetFromLocalTime(System.String)">
+            <summary>
+            Gets the timespan representing the difference between the remote computer's local time and the current computer's local time.
+            </summary>
+            <param name="remoteComputerName">The name of the remote computer.</param>
+        </member>
+        <member name="T:AppStandards.Helpers.WindowHelper">
+            <summary>
+            A class that contains window-related helper methods and properties.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Helpers.WindowHelper.ShiftWindowOntoScreen(System.Windows.Window)">
+            <summary>
+                Intent:  
+                - Shift the window onto the visible screen.
+                - Shift the window away from overlapping the task bar.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Helpers.WindowHelper.GetTaskBarLocationPerScreen">
+            <summary>
+            Returned location of taskbar on a per-screen basis, as a rectangle. See:
+            https://stackoverflow.com/questions/1264406/how-do-i-get-the-taskbars-position-and-size/36285367#36285367.
+            </summary>
+            <returns>A list of taskbar locations. If this list is empty, then the taskbar is set to "Auto Hide".</returns>
+        </member>
+        <member name="M:AppStandards.Helpers.WindowHelper.SetPlacement(System.Windows.Window,System.String)">
+            <summary>
+            Sets the placement of the given <see cref="T:System.Windows.Window"/>.
+            </summary>
+            <param name="window">The window whose position is being set.</param>
+            <param name="placementXml">The xml representation of the window's placement.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AppStandards.Helpers.WindowHelper.GetPlacement(System.Windows.Window)">
+            <summary>
+            Gets the xml representation of the placement of the given <see cref="T:System.Windows.Window"/>.
+            </summary>
+            <param name="window">The window whose position is sought.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AppStandards.Helpers.WindowHelper.CenterWindowOverParent(System.Windows.Rect,System.Windows.Window)">
+            <summary>
+            Centers a child window over it's parent window.
+            </summary>
+            <param name="parentWindowPosition">The <see cref="T:System.Windows.Rect"/> representing the parent window's position.</param>
+            <param name="childWindow">The child window.</param>
+        </member>
+        <member name="M:AppStandards.Helpers.WindowHelper.ActivateMainWindow">
+            <summary>
+            Activates the application's main window and brings it to the forefront of the screen.
+            </summary>
+        </member>
+        <member name="T:AppStandards.Logging.ObjectInfo">
+            <summary>
+            Contains methods for gathering and logging information about objects that can be used for debugging purposes.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Logging.ObjectInfo.#ctor(System.Type,AppStandards.IAppInfo,System.Boolean)">
+            <summary>
+            Creates a new <see cref="T:AppStandards.Logging.ObjectInfo"/> object.
+            <para>This <see cref="T:AppStandards.Logging.ObjectInfo"/> constructor should be called from within the object's constructor.</para>
+            </summary>
+            <param name="objectType">The object's type.</param>
+            <param name="appInfo">The application's <see cref="T:AppStandards.IAppInfo"/>.</param>
+            <param name="expectsMoreThanOneInstance">Indicates whether or not there should be more than one instance of the object in existence at any given time.</param>
+        </member>
+        <member name="M:AppStandards.Logging.ObjectInfo.LogObjectInformation(System.String,AppStandards.Logging.LogMessageType)">
+            <summary>
+            Logs the given log message prefixed by the object's type name and id and with the process id appended to the end.
+            </summary>
+            <param name="logMessage">The message to log.</param>
+            <param name="logMessageType">The <see cref="T:AppStandards.Logging.LogMessageType"/>.</param>
+        </member>
+        <member name="M:AppStandards.Logging.ObjectInfo.Dispose">
+            <summary>
+            Decrements the count for the object type and logs that the object has disposed of it's <see cref="T:AppStandards.Logging.ObjectInfo"/>.
+            </summary>
+        </member>
+        <member name="P:AppStandards.Logging.ObjectCounter.CurrentCount">
+            <summary>
+            The current number of objects.
+            </summary>
+        </member>
+        <member name="P:AppStandards.Logging.ObjectCounter.TotalCount">
+            <summary>
+            The total number of objects that have ever existed.
+            </summary>
+        </member>
+        <member name="T:AppStandards.Logging.Log">
+            <summary>
+            Contains methods for writing to a log file.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._onlineLogFolder">
+            <summary>
+            The online (server) log folder.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._offlineLogFolder">
+            <summary>
+            The offline (local) log folder.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._appName">
+            <summary>
+            The application name.
+            </summary>
+        </member>
+        <member name="P:AppStandards.Logging.Log._onlineLogFile">
+            <summary>
+            The online (server) log file.
+            </summary>
+        </member>
+        <member name="P:AppStandards.Logging.Log._offlineLogFile">
+            <summary>
+            The offline (local) log file.
+            </summary>
+        </member>
+        <member name="P:AppStandards.Logging.Log._logMessageTimestamp">
+            <summary>
+            The timestamp used for each log message.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._online">
+            <summary>
+            Indicates whether or not the application is online (able to reach the online log folder).
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._runAsyncTasks">
+            <summary>
+            Indicates whether or not the async tasks should run.
+            </summary>
+        </member>
+        <member name="P:AppStandards.Logging.Log._identifyingInfoSuffix">
+            <summary>
+            A string containing the <see cref="P:System.Environment.UserName"/> and <see cref="P:System.Environment.MachineName"/> of the calling application that can be appended to a log message which helps to identify the application that logged the message.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._logMessageQueue">
+            <summary>
+            A queue that holds log messages that are waiting to be written to the log file.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._flushingLogMessageQueue">
+            <summary>
+            Indicates whether or not the <see cref="F:AppStandards.Logging.Log._logMessageQueue"/> is being flushed.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._loggingDisabled">
+            <summary>
+            Indicates whether or not logging is disabled.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Logging.Log._initialized">
+            <summary>
+            Indicates whether or not the log has been initialized.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Logging.Log.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Creates a new <see cref="T:AppStandards.Logging.Log"/>.
+            </summary>
+            <param name="onlineLogFolderPath">The log folder path used when the client running the application is connected to the intranet. Usually a dev server.</param>
+            <param name="offlineLogFolderPath">The local log folder path used when the client running the application is not connected to the intranet. Must exist locally on the client machine.</param>
+            <param name="appName">The application name.</param>
+        </member>
+        <member name="M:AppStandards.Logging.Log.QueueLogMessageAsync(System.String,AppStandards.Logging.LogMessageType,System.Boolean)">
+            <summary>
+            Addes a log message to the log message queue. The log message queue is automatically flushed which writes all log messages to the log file in the order that they were received.
+            <para>The flushing operation first tries to write to the online log. If unsuccessful, will write to the offline log.</para>
+            </summary>
+            <param name="logMessage">The message to log.</param>
+            <param name="logMessageType">The log message type.</param>
+            <param name="addIdentifyingInformation">Indicates whether or not identifying information (such as the username and machine name) should be added to the log message.</param>
+        </member>
+        <member name="M:AppStandards.Logging.Log.Dispose">
+            <summary>
+            Stops async log tasks.
+            <para>Note: This method may take a few minutes to finish executing. If it's being called when a window closes, call it from the 'Closed' event rather than the 'Closing' event so that the window doesn't remain open after the user closes it.</para>
+            </summary>
+        </member>
+        <member name="M:AppStandards.Logging.Log.InitializeAsync(System.String,System.String)">
+            <summary>
+            Initializes the <see cref="T:AppStandards.Logging.Log"/> asynchronously.
+            </summary>
+            <param name="onlineLogFolderPath">The log folder path used when the client running the application is connected to the intranet. Usually a dev server.</param>
+            <param name="offlineLogFolderPath">The local log folder path used when the client running the application is not connected to the intranet. Must exist locally on the client machine.</param>
+        </member>
+        <member name="M:AppStandards.Logging.Log.GetLogMessagePrefix(AppStandards.Logging.LogMessageType)">
+            <summary>
+            Gets the log message prefix: the letter corresponding to the provided <see cref="T:AppStandards.Logging.LogMessageType"/>.
+            </summary>
+            <param name="logMessageType">The type of log message.</param>
+            <returns>A string containing the log message prefix.</returns>
+        </member>
+        <member name="M:AppStandards.Logging.Log.CreateLogFolder(System.IO.DirectoryInfo,System.Boolean)">
+            <summary>
+            Creates the specified log folder.
+            </summary>
+            <param name="logFolder">The log folder to create.</param>
+            <param name="suppressExceptions">Indicates whether or not to suppress exceptions that are thrown when attempting to create the log folder.</param>
+            <returns>A bool indicating whether or not the log folder was successfully created.</returns>
+        </member>
+        <member name="M:AppStandards.Logging.Log.CheckOnlineStatusAsync">
+            <summary>
+            Determines whether or not the application is online (able to access the online log folder).
+            </summary>
+        </member>
+        <member name="M:AppStandards.Logging.Log.SyncLogFilesAsync">
+            <summary>
+            Syncs the log files by transfering the offline log files to the online log file folder.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Logging.Log.GetLogFiles(System.IO.DirectoryInfo)">
+            <summary>
+            Retrieves all of the log files within the specified folder.
+            </summary>
+            <param name="logFolder">The folder containing the log files to be retrieved.</param>
+            <returns>A list containing all of the log files found in the specified folder.</returns>
+        </member>
+        <member name="M:AppStandards.Logging.Log.GetStreamWriter(System.IO.FileInfo)">
+            <summary>
+            Gets a <see cref="T:System.IO.StreamWriter"/> for the specified file.
+            </summary>
+            <param name="file">The file which the <see cref="T:System.IO.StreamWriter"/> must access.</param>
+            <returns>The requested <see cref="T:System.IO.StreamWriter"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Logging.Log.GetStreamReader(System.IO.FileInfo,System.IO.FileShare)">
+            <summary>
+            Gets a <see cref="T:System.IO.StreamReader"/> for the specified file.
+            </summary>
+            <param name="file">The file which the <see cref="T:System.IO.StreamReader"/> must access.</param>
+            <param name="fileShare">The <see cref="T:System.IO.FileShare"/> to use on the <see cref="T:System.IO.StreamReader"/>.</param>
+            <returns>The requested <see cref="T:System.IO.StreamReader"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Logging.Log.AddToLogMessageQueue(System.String)">
+            <summary>
+            Adds a log message to the <see cref="F:AppStandards.Logging.Log._logMessageQueue"/> and calles the <see cref="M:AppStandards.Logging.Log.FlushLogMessageQueueAsync"/> method if it is not already running.
+            </summary>
+            <param name="logMessage"></param>
+        </member>
+        <member name="M:AppStandards.Logging.Log.FlushLogMessageQueueAsync">
+            <summary>
+            Flushes the <see cref="F:AppStandards.Logging.Log._logMessageQueue"/>.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Logging.Log.WriteLogMessageToLogFile(System.String)">
+            <summary>
+            Writes the specified log messages to the online log file (if available and if the offline log file doesn't exist) or the offline log file in all other cases.
+            </summary>
+            <param name="logMessage"></param>
+        </member>
+        <member name="M:AppStandards.Logging.Log.WriteLogMessageToOnlineLogFile(System.IO.FileInfo,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Attempts to write the given log message to the online log file using the given stream writer. If write fails, this method will retry the number of times specified.
+            </summary>
+            <param name="onlineLogFile">The online log file.</param>
+            <param name="logMessage">The log message to write.</param>
+            <param name="retryCount">The number of times to retry. Note: This method has a maximum retry limit of 100.</param>
+            <param name="suppressExceptions">Indicates whether or not the method should suppress exceptions.</param>
+        </member>
+        <member name="T:AppStandards.Logging.LogMessageType">
+            <summary>
+            The type of log message.
+            </summary>
+        </member>
+        <member name="T:AppStandards.MVVM.PropertyChangedHelper">
+            <summary>
+            Implementation of <see cref="T:System.ComponentModel.INotifyPropertyChanged"/>.
+            </summary>
+        </member>
+        <member name="E:AppStandards.MVVM.PropertyChangedHelper.PropertyChanged">
+            <summary>
+            The <see cref="T:System.ComponentModel.PropertyChangedEventHandler"/>.
+            </summary>
+        </member>
+        <member name="M:AppStandards.MVVM.PropertyChangedHelper.RaisePropertyChangedEvent(System.String)">
+            <summary>
+            Raises the <see cref="E:AppStandards.MVVM.PropertyChangedHelper.PropertyChanged"/> event.
+            </summary>
+            <param name="propertyName">The name of the property that changed. If the property name is not specified, it will be resolved automatically.</param>
+        </member>
+        <member name="T:AppStandards.MVVM.RelayCommand`1">
+            <summary>
+            A command whose sole purpose is to 
+            relay its functionality to other
+            objects by invoking delegates. The
+            default return value for the 
+            
+            method is 'true'.
+            </summary>
+        </member>
+        <member name="M:AppStandards.MVVM.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})">
+            <summary>
+            Creates a new command.
+            </summary>
+            <param name="execute">The execution logic.</param>
+            <param name="canExecute">The execution status logic.</param>
+        </member>
+        <member name="T:AppStandards.MVVM.RelayCommand">
+            <summary>
+            A command whose sole purpose is to 
+            relay its functionality to other
+            objects by invoking delegates. The
+            default return value for the CanExecute
+            method is 'true'.
+            </summary>
+        </member>
+        <member name="M:AppStandards.MVVM.RelayCommand.#ctor(System.Action)">
+            <summary>
+            Creates a new command that can always execute.
+            </summary>
+            <param name="execute">The execution logic.</param>
+        </member>
+        <member name="M:AppStandards.MVVM.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})">
+            <summary>
+            Creates a new command.
+            </summary>
+            <param name="execute">The execution logic.</param>
+            <param name="canExecute">The execution status logic.</param>
+        </member>
+        <member name="M:AppStandards.MVVM.RelayCommand.ReEvaluateCanExecute">
+            <summary>
+            Forces the CanExecute to be re-evaluated.
+            </summary>
+        </member>
+        <member name="T:AppStandards.MVVM.BaseViewModel">
+            <summary>
+            Base ViewModel used in MVVM applications. Implements <see cref="T:System.ComponentModel.INotifyPropertyChanged"/> interface.
+            </summary>
+        </member>
+        <member name="T:AppStandards.UIControls.CornerButtons">
+            <summary>
+            Interaction logic for CornerButtons.xaml
+            </summary>
+        </member>
+        <member name="P:AppStandards.UIControls.CornerButtons._parentWindow">
+            <summary>
+            Returns the <see cref="T:System.Windows.Window"/> that is the parent of the <see cref="T:AppStandards.UIControls.CornerButtons"/>.
+            </summary>
+        </member>
+        <member name="P:AppStandards.UIControls.CornerButtons.CanCancel">
+            <summary>
+            Indicates whether or not the user can cancel out of the dialog.
+            </summary>
+        </member>
+        <member name="F:AppStandards.UIControls.CornerButtons.CanCancelProperty">
+            <summary>
+            The dependency property for <see cref="P:AppStandards.UIControls.CornerButtons.CanCancel"/>.
+            <para>Using a DependencyProperty as the backing store for CanCancel enables animation, styling, binding, etc...</para>
+            </summary>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.CloseButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Closes the parent window.
+            </summary>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.MaximizeButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Maximizes or restores the parent window.
+            </summary>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.MinimizeButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Minimizes the parent window.
+            </summary>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.CustomChrome.Close(System.Windows.Window)">
+            <summary>
+            Closes the specified <see cref="T:System.Windows.Window"/>.
+            </summary>
+            <param name="Window">The <see cref="T:System.Windows.Window"/> to close.</param>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.CustomChrome.Maximize(System.Windows.Window)">
+            <summary>
+            Maximizes or restores the specified <see cref="T:System.Windows.Window"/>, depending on the <see cref="T:System.Windows.WindowState"/>.
+            </summary>
+            <param name="Window">The <see cref="T:System.Windows.Window"/> to maximize or restore.</param>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.CustomChrome.Minimize(System.Windows.Window)">
+            <summary>
+            Minimizes the specified <see cref="T:System.Windows.Window"/>.
+            </summary>
+            <param name="Window">The <see cref="T:System.Windows.Window"/> to minimize.</param>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.CustomChrome.AdjustWindowSize(System.Windows.Window)">
+            <summary>
+            Maximizes or restores the specified <see cref="T:System.Windows.Window"/>, depending on the <see cref="T:System.Windows.WindowState"/>.
+            </summary>
+            <param name="Window">The <see cref="T:System.Windows.Window"/> to maximize or restore.</param>
+        </member>
+        <member name="M:AppStandards.UIControls.CornerButtons.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AppStandards.UIControls.SplashScreen">
+            <summary>
+            Interaction logic for SplashScreen.xaml
+            </summary>
+            <summary>
+            SplashScreen
+            </summary>
+        </member>
+        <member name="M:AppStandards.UIControls.SplashScreen.#ctor(AppStandards.IAppInfo)">
+            <summary>
+            Constructs a new <see cref="T:AppStandards.UIControls.SplashScreen"/>.
+            </summary>
+            <param name="appInfo">The application information.</param>
+        </member>
+        <member name="M:AppStandards.UIControls.SplashScreen.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AppStandards.IAppInfo">
+            <summary>
+            An application information interface.
+            </summary>
+        </member>
+        <member name="P:AppStandards.IAppInfo.AppName">
+            <summary>
+            The name of the application.
+            </summary>
+        </member>
+        <member name="P:AppStandards.IAppInfo.VersionNumber">
+            <summary>
+            The application's version number.
+            </summary>
+        </member>
+        <member name="P:AppStandards.IAppInfo.Company">
+            <summary>
+            The company which produced the application.
+            </summary>
+        </member>
+        <member name="P:AppStandards.IAppInfo.Log">
+            <summary>
+            The application's log file.
+            </summary>
+        </member>
+        <member name="T:AppStandards.Messages">
+            <summary>
+            Contains methods for showing dialog messages to the user.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Messages.ErrorMessage(System.String,AppStandards.IAppInfo,System.Boolean,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult,System.Boolean,System.Boolean)">
+            <summary>
+            Shows an error message to the user with the error image.
+            </summary>
+            <param name="userMessage">The error message to display to the user.</param>
+            <param name="appInfo">The application's information.</param>
+            <param name="writeToLog">Indicates whether or not a message should be written to the application's log file before the error message is shown to the user.</param>
+            <param name="logMessage">The message to log. If null, with writeToLog set to true, the userMessage will be logged.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="closeApp">Indicates whether or not the application should be closed after displaying the error message to the user. Performs an Application.Current.Shutdown() call.</param>
+            <param name="forceQuit">Indicates whether or not the application should be terminated after displaying the error message to the user. Performs an Environment.Exit() call.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Messages.ErrorMessage(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult,System.Boolean,System.Boolean)">
+            <summary>
+            Shows an error message to the user with the error image.
+            </summary>
+            <param name="userMessage">The error message to display to the user.</param>
+            <param name="appName">The application's name.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="closeApp">Indicates whether or not the application should be closed after displaying the error message to the user. Performs an Application.Current.Shutdown() call.</param>
+            <param name="forceQuit">Indicates whether or not the application should be terminated after displaying the error message to the user. Performs an Environment.Exit() call.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Messages.WarningMessage(System.String,AppStandards.IAppInfo,System.Boolean,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows a warning message to the user with the warning image.
+            </summary>
+            <param name="userMessage">The warning message to display to the user.</param>
+            <param name="appInfo">The application's information.</param>
+            <param name="writeToLog">Indicates whether or not a message should be written to the application's log file before the warning message is shown to the user.</param>
+            <param name="logMessage">The message to log. If null, with writeToLog set to true, the userMessage will be logged.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Messages.WarningMessage(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows a warning message to the user with the warning image.
+            </summary>
+            <param name="userMessage">The warning message to display to the user.</param>
+            <param name="appName">The application's name.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Messages.InfoMessage(System.String,AppStandards.IAppInfo,System.Boolean,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows an information message to the user with the information image.
+            </summary>
+            <param name="userMessage">The information message to display to the user.</param>
+            <param name="appInfo">The application's information.</param>
+            <param name="writeToLog">Indicates whether or not a message should be written to the application's log file before the information message is shown to the user.</param>
+            <param name="logMessage">The message to log. If null, with writeToLog set to true, the userMessage will be logged.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Messages.InfoMessage(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows an information message to the user with the information image.
+            </summary>
+            <param name="userMessage">The information message to display to the user.</param>
+            <param name="appName">The application's name.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Messages.ConfirmAction(System.String,AppStandards.IAppInfo,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows a message to the user with the question image.
+            <para>Used to confirm a user action.</para>
+            </summary>
+            <param name="userMessage">The message to display to the user.</param>
+            <param name="appInfo">The application's information.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="M:AppStandards.Messages.ConfirmAction(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxResult)">
+            <summary>
+            Shows a message to the user with the question image.
+            <para>Used to confirm a user action.</para>
+            </summary>
+            <param name="userMessage">The message to display to the user.</param>
+            <param name="appName">The application's name.</param>
+            <param name="buttons">The buttons to display on the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <param name="defaultResult">The defualt result for the <see cref="T:System.Windows.MessageBox"/>.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> of the <see cref="T:System.Windows.MessageBox"/>.</returns>
+        </member>
+        <member name="T:AppStandards.Routines">
+            <summary>
+            Contains standard application routines.
+            </summary>
+        </member>
+        <member name="F:AppStandards.Routines._shutdownString">
+            <summary>
+            The application shutdown log message.
+            </summary>
+        </member>
+        <member name="M:AppStandards.Routines.Startup(AppStandards.Logging.Log)">
+            <summary>
+            Startup routine that logs an application startup message.
+            <para>Note: The <see cref="M:AppStandards.Routines.Startup(AppStandards.IAppInfo)"/> overload is preferred becuase it includes the application version number in the startup log message.</para>
+            </summary>
+            <param name="log">The application <see cref="T:AppStandards.Logging.Log"/>.</param>
+        </member>
+        <member name="M:AppStandards.Routines.Startup(AppStandards.IAppInfo)">
+            <summary>
+            Startup routine that logs an application startup message.
+            </summary>
+            <param name="appInfo">The application's information.</param>
+        </member>
+        <member name="M:AppStandards.Routines.Shutdown(AppStandards.Logging.Log)">
+            <summary>
+            Shutdown routine that logs program shutdown and disposes the application's <see cref="T:AppStandards.Logging.Log"/>.
+            <para>Note: This method may take a few minutes to finish executing. If it's being called when a window closes, call it from the 'Closed' event rather than the 'Closing' event so that the window doesn't remain open after the user closes it.</para>
+            </summary>
+            <param name="log">The application's log file.</param>
+        </member>
+        <member name="M:AppStandards.Routines.Shutdown(AppStandards.IAppInfo)">
+            <summary>
+            Shutdown routine that logs program shutdown and disposes the application's <see cref="T:AppStandards.Logging.Log"/>.
+            <para>Note: This method may take a few minutes to finish executing. If it's being called when a window closes, call it from the 'Closed' event rather than the 'Closing' event so that the window doesn't remain open after the user closes it.</para>
+            </summary>
+            <param name="appInfo">The application's information.</param>
+        </member>
+        <member name="T:Microsoft.Shell.NativeMethods.MessageHandler">
+            <summary> 
+            Delegate declaration that matches WndProc signatures. 
+            </summary> 
+        </member>
+        <member name="T:Microsoft.Shell.ISingleInstanceApp">
+            <summary>
+            Defines requirements for single instance applications.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Shell.ISingleInstanceApp.SignalExternalCommandLineArgs(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Processes command line arguments from secondary application instances.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Shell.SingleInstance`1">
+            <summary> 
+            This class checks to make sure that only one instance of  
+            this application is running at a time. 
+            </summary> 
+            <remarks> 
+            Note: this class should be used with some caution, because it does no 
+            security checking. For example, if one instance of an app that uses this class 
+            is running as Administrator, any other instance, even if it is not 
+            running as Administrator, can activate it with command line arguments. 
+            For most apps, this will not be much of an issue. 
+            </remarks> 
+        </member>
+        <member name="F:Microsoft.Shell.SingleInstance`1.Delimiter">
+            <summary> 
+            String delimiter used in channel names. 
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Shell.SingleInstance`1.ChannelNameSuffix">
+            <summary> 
+            Suffix to the channel name. 
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Shell.SingleInstance`1.RemoteServiceName">
+            <summary> 
+            Remote service name. 
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Shell.SingleInstance`1.IpcProtocol">
+            <summary> 
+            IPC protocol used (string). 
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Shell.SingleInstance`1.singleInstanceMutex">
+            <summary> 
+            Application mutex. 
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Shell.SingleInstance`1.channel">
+            <summary> 
+            IPC channel for communications. 
+            </summary> 
+        </member>
+        <member name="F:Microsoft.Shell.SingleInstance`1.commandLineArgs">
+            <summary> 
+            List of command line arguments for the application. 
+            </summary> 
+        </member>
+        <member name="P:Microsoft.Shell.SingleInstance`1.CommandLineArgs">
+            <summary> 
+            Gets list of command line arguments for the application. 
+            </summary> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.InitializeAsFirstInstance(System.String)">
+            <summary> 
+            Checks if the instance of the application attempting to start is the first instance.  
+            If not, activates the first instance. 
+            </summary> 
+            <returns>True if this is the first instance of the application.</returns> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.Cleanup">
+            <summary> 
+            Cleans up single-instance code, clearing shared resources, mutexes, etc. 
+            </summary> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.GetCommandLineArgs(System.String)">
+            <summary> 
+            Gets command line args - for ClickOnce deployed applications, command line args may not be passed directly, they have to be retrieved. 
+            </summary> 
+            <returns>List of command line arg strings.</returns> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.CreateRemoteService(System.String)">
+            <summary> 
+            Creates a remote service for communication. 
+            </summary> 
+            <param name="channelName">Application's IPC channel name.</param> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.SignalFirstInstance(System.String,System.Collections.Generic.IList{System.String})">
+            <summary> 
+            Creates a client channel and obtains a reference to the remoting service exposed by the server -  
+            in this case, the remoting service exposed by the first instance. Calls a function of the remoting service  
+            class to pass on command line arguments from the second instance to the first and cause it to activate itself. 
+            </summary> 
+            <param name="channelName">Application's IPC channel name.</param> 
+            <param name="args"> 
+            Command line arguments for the second instance, passed to the first instance to take appropriate action. 
+            </param> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.ActivateFirstInstanceCallback(System.Object)">
+            <summary> 
+            Callback for activating first instance of the application. 
+            </summary> 
+            <param name="arg">Callback argument.</param> 
+            <returns>Always null.</returns> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.ActivateFirstInstance(System.Collections.Generic.IList{System.String})">
+            <summary> 
+            Activates the first instance of the application with arguments from a second instance. 
+            </summary> 
+            <param name="args">List of arguments to supply the first instance of the application.</param> 
+        </member>
+        <member name="T:Microsoft.Shell.SingleInstance`1.IPCRemoteService">
+            <summary> 
+            Remoting service class which is exposed by the server i.e the first instance and called by the second instance 
+            to pass on the command line arguments to the first instance and cause it to activate itself. 
+            </summary> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.IPCRemoteService.InvokeFirstInstance(System.Collections.Generic.IList{System.String})">
+            <summary> 
+            Activates the first instance of the application. 
+            </summary> 
+            <param name="args">List of arguments to pass to the first instance.</param> 
+        </member>
+        <member name="M:Microsoft.Shell.SingleInstance`1.IPCRemoteService.InitializeLifetimeService">
+            <summary> 
+            Remoting Object's ease expires after every 5 minutes by default. We need to override the InitializeLifetimeService class 
+            to ensure that lease never expires. 
+            </summary> 
+            <returns>Always null.</returns> 
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

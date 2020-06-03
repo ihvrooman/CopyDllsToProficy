@@ -1,0 +1,78 @@
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\AddServerView.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\MainWindow.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\SelectItemView.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\SelectServerView.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\App.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy_MarkupCompile.cache
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy_MarkupCompile.lref
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.exe.config
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.application
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.exe
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.pdb
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\AppStandards.dll
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\AppStandards.pdb
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Release\AppStandards.xml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\App.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\AddServerView.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\MainWindow.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\SelectItemView.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\SelectServerView.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.g.resources
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.Properties.Resources.resources
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.GenerateResource.cache
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.CoreCompileInputs.cache
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.application
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.CopyComplete
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.exe
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.exe.config
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.application
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\CopyDllsToProficy.exe
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\AppStandards.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\AppStandards.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\AppStandards.xml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\MainWindow.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\App.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy_MarkupCompile.cache
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy_MarkupCompile.lref
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\App.baml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\MainWindow.baml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.g.resources
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.Properties.Resources.resources
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.GenerateResource.cache
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.CoreCompileInputs.cache
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.application
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.CopyComplete
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.exe
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\ControlzEx.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\MahApps.Metro.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\MahApps.Metro.IconPacks.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\System.Windows.Interactivity.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\ControlzEx.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\MahApps.Metro.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\MahApps.Metro.xml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\MahApps.Metro.IconPacks.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Release\MahApps.Metro.IconPacks.xml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\ServerSettingsView.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\ServerSettingsView.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csprojAssemblyReference.cache
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\App.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\MainWindow.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\ServerSettingsView.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy_MarkupCompile.cache
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy_MarkupCompile.lref
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\App.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\MainWindow.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\Views\ServerSettingsView.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.g.resources
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.Properties.Resources.resources
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.GenerateResource.cache
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.csproj.CoreCompileInputs.cache
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Release\CopyDllsToProficy.exe

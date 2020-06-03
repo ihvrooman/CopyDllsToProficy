@@ -1,0 +1,178 @@
+﻿<Controls:MetroWindow x:Class="CopyDllsToProficy.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CopyDllsToProficy"
+        xmlns:models="clr-namespace:CopyDllsToProficy.Models"
+        xmlns:views="clr-namespace:CopyDllsToProficy.Views"
+        xmlns:validationRules="clr-namespace:CopyDllsToProficy.ValidationRules"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:properties="clr-namespace:CopyDllsToProficy.Properties"
+        mc:Ignorable="d"
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        MinWidth="400" MinHeight="400" Width="600" Height="500" Closed="Window_Closed" Closing="Window_Closing"  Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Dialog:DialogParticipation.Register="{Binding}" Title="{Binding WindowTitle}">
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Command="{Binding AboutCommand}" ToolTip="Show Application Information">
+                <iconPacks:PackIconModern Width="24" Height="24" Kind="InformationCircle"/>
+            </Button>
+            <Button Command="{Binding ToggleSettingsFlyoutCommand}" ToolTip="Server Settings">
+                <StackPanel Orientation="Horizontal">
+                    <iconPacks:PackIconModern Width="24" Height="24" Kind="Monitor" />
+                    <TextBlock Margin="5 0 0 0" VerticalAlignment="Center" Text="Server Settings" />
+                </StackPanel>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+    <Controls:MetroWindow.Flyouts>
+        <Controls:FlyoutsControl>
+            <Controls:Flyout Header="Server Settings" Position="Right" Theme="Accent" HorizontalContentAlignment="Stretch" IsOpen="{Binding SettingsFlyoutIsOpen}">
+                <views:ServerSettingsView x:Name="ServerSettingsView"/>
+            </Controls:Flyout>
+        </Controls:FlyoutsControl>
+    </Controls:MetroWindow.Flyouts>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="33"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.Row="0">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Vertical" Margin="5">
+
+                    <!--Source folder path-->
+                    <TextBlock Text="Visual Studio Solutions Source Folder" Style="{StaticResource Header}"></TextBlock>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right" x:Name="SelectSourceFolderButton" Command="{Binding SelectSourceFolderCommand}" Width="30" Height="30" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleButtonStyle}" ToolTip="Select Folder">
+                            <iconPacks:PackIconModern Width="15" Height="15" Margin="2" Kind="FolderEllipsis"/>
+                        </Button>
+                        <TextBox DockPanel.Dock="Left" Style="{StaticResource TextBox}" Name="SourceFolderPathTextbox" Margin="0, 5, 5, 5" IsReadOnly="True">
+                            <TextBox.Text>
+                                <Binding Path="SourceFolder.FullName" Mode="OneWay">
+                                    <Binding.ValidationRules>
+                                        <validationRules:FolderPathValidationRule></validationRules:FolderPathValidationRule>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </DockPanel>
+
+                    <!--Solution-->
+                    <TextBlock Style="{StaticResource Header}" Text="Visual Studio Solution"/>
+                    <ComboBox ItemsSource="{Binding SolutionFolders}" SelectedItem="{Binding SolutionFolder}" FontSize="14" SelectedIndex="{Binding SelectedSolutionIndex}" Controls:TextBoxHelper.Watermark="Please select a VS solution."/>
+
+                    <!--Project-->
+                    <TextBlock Style="{StaticResource Header}" Text="Visual Studio Project"/>
+                    <ComboBox ItemsSource="{Binding ProjectFolders}" SelectedItem="{Binding ProjectFolder}" FontSize="14" SelectedIndex="{Binding SelectedProjectIndex}" Controls:TextBoxHelper.Watermark="Please select a VS project."/>
+
+                    <!--File-->
+                    <TextBlock Style="{StaticResource Header}" Text="File"/>
+                    <ComboBox ItemsSource="{Binding AvailableFiles}" SelectedItem="{Binding SelectedFile}" FontSize="14" SelectedIndex="{Binding SelectedFileIndex}" Controls:TextBoxHelper.Watermark="Please select a dll file."/>
+
+                    <!--Server-->
+                    <TextBlock Style="{StaticResource Header}" Text="Server To Copy To"/>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right" Command="{Binding ToggleSettingsFlyoutCommand}" Width="30" Height="30" ToolTip="Open Server Settings" RenderTransformOrigin=".5,.5">
+                            <Button.RenderTransform>
+                                <RotateTransform Angle="0" />
+                            </Button.RenderTransform>
+                            <Button.Style>
+                                <Style TargetType="Button" BasedOn="{StaticResource MahApps.Metro.Styles.MetroCircleButtonStyle}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Trigger.EnterActions>
+                                                <BeginStoryboard x:Name="RotateSettingsIcon">
+                                                    <Storyboard>
+                                                        <DoubleAnimation
+                Storyboard.TargetProperty="(Button.RenderTransform).(RotateTransform.Angle)"
+                From="0.0" To="360" Duration="0:0:1.5" RepeatBehavior="Forever"/>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </Trigger.EnterActions>
+                                            <Trigger.ExitActions>
+                                                <StopStoryboard BeginStoryboardName="RotateSettingsIcon"/>
+                                            </Trigger.ExitActions>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <iconPacks:PackIconMaterial Width="15" Height="15" Margin="2" Kind="Settings"/>
+                        </Button>
+                        <ComboBox DockPanel.Dock="Left" ItemsSource="{Binding Servers}" SelectedItem="{Binding ServerName, UpdateSourceTrigger=PropertyChanged}" FontSize="14" SelectedIndex="{Binding SelectedServerIndex}" Margin="0,0,5,0" Controls:TextBoxHelper.Watermark="Please select a server."/>
+                    </DockPanel>
+                </StackPanel>
+
+                <!--Copy Button-->
+                <Button Grid.Row="1" Width="50" Height="50" Style="{DynamicResource MahApps.Metro.Styles.MetroCircleButtonStyle}" Command="{Binding CopyFileCommand}" ToolTip="Copy File to Server">
+                    <iconPacks:PackIconFontAwesome Kind="CopyRegular" Width="30" Height="30" RenderTransformOrigin=".5,.5">
+                        <iconPacks:PackIconFontAwesome.RenderTransform>
+                            <RotateTransform Angle="0" />
+                        </iconPacks:PackIconFontAwesome.RenderTransform>
+                        <iconPacks:PackIconFontAwesome.Style>
+                            <Style TargetType="iconPacks:PackIconFontAwesome">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Copying}" Value="True">
+                                        <DataTrigger.EnterActions>
+                                            <BeginStoryboard x:Name="RotateCopyIcon">
+                                                <Storyboard>
+                                                    <DoubleAnimation
+                Storyboard.TargetProperty="(iconPacks:PackIconFontAwesome.RenderTransform).(RotateTransform.Angle)"
+                From="0.0" To="360" Duration="0:0:1.5" RepeatBehavior="Forever"/>
+                                                </Storyboard>
+                                            </BeginStoryboard>
+                                        </DataTrigger.EnterActions>
+                                        <DataTrigger.ExitActions>
+                                            <BeginStoryboard>
+                                                <Storyboard>
+                                                    <DoubleAnimation
+                Storyboard.TargetProperty="(iconPacks:PackIconFontAwesome.RenderTransform).(RotateTransform.Angle)"
+                To="0" Duration="0:0:0.5"/>
+                                                </Storyboard>
+                                            </BeginStoryboard>
+                                            <StopStoryboard BeginStoryboardName="RotateCopyIcon"/>
+                                        </DataTrigger.ExitActions>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </iconPacks:PackIconFontAwesome.Style>
+                    </iconPacks:PackIconFontAwesome>
+                </Button>
+
+            </Grid>
+        </ScrollViewer>
+
+        <StatusBar Grid.Row="1" Name="StatusBar" Margin="0,5,0,0">
+            <StatusBar.Style>
+                <Style TargetType="StatusBar">
+                    <Setter Property="Background" Value="{DynamicResource AccentColorBrush}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status}" Value="{x:Static models:Status.Warn}">
+                            <Setter Property="Background" Value="Yellow"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="{x:Static models:Status.Fail}">
+                            <Setter Property="Background" Value="Red"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="{x:Static models:Status.Success}">
+                            <Setter Property="Background" Value="LightGreen"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StatusBar.Style>
+            <DockPanel>
+                <Controls:ProgressRing DockPanel.Dock="Right" IsActive="{Binding ProgressRingIsActive}" Height="20" Width="20" Foreground="Black" FlowDirection="LeftToRight"/>
+                <TextBlock DockPanel.Dock="Left" FontSize="15" Foreground="Black" Text="{Binding StatusText}" Margin="0,0,10,0"/>
+            </DockPanel>
+        </StatusBar>
+
+    </Grid>
+
+</Controls:MetroWindow>

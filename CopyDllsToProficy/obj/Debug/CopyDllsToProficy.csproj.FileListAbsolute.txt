@@ -1,0 +1,97 @@
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe.config
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.application
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.pdb
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.dll
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.pdb
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.xml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\AddServerView.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\MainWindow.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\SelectItemView.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\SelectServerView.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\App.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy_MarkupCompile.cache
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy_MarkupCompile.lref
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\App.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\AddServerView.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\MainWindow.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\SelectItemView.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\SelectServerView.baml
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.g.resources
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.Properties.Resources.resources
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.GenerateResource.cache
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.CoreCompileInputs.cache
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.application
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.CopyComplete
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.exe
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.pdb
+C:\Users\VroomanI\source\repos\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csprojAssemblyReference.cache
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe.config
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.application
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.xml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\MainWindow.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\App.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy_MarkupCompile.cache
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy_MarkupCompile.lref
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\App.baml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\MainWindow.baml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.g.resources
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.Properties.Resources.resources
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.GenerateResource.cache
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.CoreCompileInputs.cache
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.exe.manifest
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.application
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.CopyComplete
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.exe
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\ControlzEx.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\ControlzEx.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.xml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\ServerSettingsView.g.cs
+C:\Users\VroomanI\Documents\Source\GIT Repo\Support Applications\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\ServerSettingsView.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\App.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\MainWindow.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\ServerSettingsView.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy_MarkupCompile.cache
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy_MarkupCompile.lref
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\App.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\MainWindow.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\Views\ServerSettingsView.baml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.g.resources
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.Properties.Resources.resources
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.GenerateResource.cache
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.CoreCompileInputs.cache
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.exe
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.pdb
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe.config
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.exe
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\CopyDllsToProficy.pdb
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.dll
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\ControlzEx.dll
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.dll
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\System.Windows.Interactivity.dll
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.pdb
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\AppStandards.xml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\ControlzEx.pdb
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.pdb
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.xml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Source\Personal\CopyDllsToProficy\CopyDllsToProficy\obj\Debug\CopyDllsToProficy.csproj.CopyComplete
